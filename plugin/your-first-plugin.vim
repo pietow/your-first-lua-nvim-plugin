@@ -7,5 +7,6 @@ let g:bla1 = 44
 let g:bla2 = 200
 augroup YourFirstPlugin
     autocmd!
+    autocmd VimResized * :lua require("your-first-plugin").onResize()
 augroup END
 
